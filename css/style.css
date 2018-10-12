@@ -1,0 +1,96 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    padding: 2%
+}
+.login{
+    width: auto;
+    height: 8%;
+    border: none;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+}
+.firstPart{
+    padding: 2% 15%;
+    
+}
+.slogan{
+    line-height: 50px;
+}
+.shopButton{
+    width: 60%;
+    height: 8vh;
+    border: none;
+    background-color: #1A237E;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+
+}
+.downloadStores{
+    width: 45%;
+    height: 8vh;
+    border: none;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.quote{
+    text-align: center;
+    background-color: #3a4755;
+    color: #fff;
+    padding: 1%;
+}
+
+.quote2{
+    text-align: center;
+    background-color: #f9f9f9;
+    color: #424242;
+    padding: 4%;
+}
+
+.services{
+    padding: 40px;
+}
+.text_div{
+    display: inline-block;
+    margin-left: 15px;
+}
+.icon_div{
+    display: inline-block;
+}
+.text_div_right{
+    display: inline-block;
+    margin-left: 30px;
+    
+}
+.icon_div_right{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.text_div_right2{
+    display: inline-block;
+    margin-left: 20px;
+}
+.servicess{
+    padding-left: 10%;
+}
+.partner{
+    width: 35%;
+    height: 8vh;
+    border: none;
+    color: #fff;
+    background-color: #1A237E;
+    border-radius: 5px;
+}
+footer{
+    padding: 30px;
+}
+
+a{
+    color: #1A237E;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cart-InstaShop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/purchase.css">
+  </head>
+    
+  <body>
+
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>Your Shopping Cart</h1>
+          </div>
+          <div class="col-md-6">
+            <div id="cart-container">
+              <div id="cart">
+                <i class="fa fa-shopping-cart fa-2x openCloseCart" aria-hidden="true"></i>
+                <button id="emptyCart">Delete Your Items</button>
+              </div>
+              <span id="itemCount"></span>
+            </div> 
+          </div>
+        </div>
+      </div> 
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <div id="shoppingCart">
+          <div id="cartItemsContainer">
+            <div class="col-md-12">
+              <h2>Your Items</h2>
+              <i class="fa fa-times-circle-o fa-2x openCloseCart" aria-hidden="true"></i>
+              <div id="cartItems"></div>
+              <span id="cartTotal"></span>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+      
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('fruits')"> Fruits & Vegetables</button>
+            <button class="btn" onclick="filterSelection('meat')"> Meat</button>
+            <button class="btn" onclick="filterSelection('eggs')"> Eggs & Dairy</button>
+            <button class="btn" onclick="filterSelection('health')"> Health & Nutrition</button>
+          </div>
+        </div>
+      </div> 
+    </div>
+      
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3" style="width:50%">
+          <div class="card fruits" >
+            <img  src="images/product1.jpg" alt="product image" style="width:100%">
+            <div class="card-body">
+              <p class="card-text">Gala Apples</p>
+              <h4 class="card-title"><span class="price"> 2</span> LE</h4>
+              <a class="add btn">Add to cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6" style="width:50%">
+          <div class="card fruits" >
+            <img  src="images/product2.jpg" alt="product image" style="width:100%">
+            <div class="card-body">
+              <p class="card-text">Green Bell Pepper</p>
+              <h4 class="card-title"><span class="price"> 1</span> LE</h4>
+              <a class="add btn ">Add to cart</a>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3" style="width:50%">
+          <div class="card meat" >
+            <img  src="images/product3.jpg" alt="product image" style="width:100%">
+            <div class="card-body">
+              <p class="card-text">Ground Beef Chuck</p>
+              <h4 class="card-title"><span class="price"> 4</span> LE</h4>
+              <a class="add btn cartButton">Add to cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6" style="width:50%">
+          <div class="card meat" >
+            <img  src="images/product4.png" alt="product image" style="width:100%">
+            <div class="card-body">
+              <p class="card-text">Chicken Stripes</p>
+              <h4 class="card-title"><span class="price"> 4</span> LE</h4>
+              <a class="add btn cartButton">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+      
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3" style="width:50%">
+          <div class="card eggs" >
+            <img  src="images/product5.jpg" alt="product image" style="width:100%">
+            <div class="card-body">
+              <p class="card-text">Shredded Mozzarella Chesse</p>
+              <h4 class="card-title"><span class="price"> 3</span> LE</h4>
+              <a class="add btn cartButton">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3" style="width:50%">
+          <div class="card health">
+            <img  src="images/product6.jpg" alt="product image" style="width:100%">
+            <div class="card-body">
+              <p class="card-text">Caramel Chocolate Nut Roll</p>
+              <h4 class="card-title"><span class="price"> 6</span> LE</h4>
+              <a class="add btn cartButton">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+  </body>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="js/javascript.js"></script>
+  </html>

@@ -1,0 +1,89 @@
+body{
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-fluid{
+    padding: 0
+}
+
+.column1{
+    background-color: #fff;
+    display: block;
+}
+
+.cover{
+    text-align: center;
+    margin-top: 25%;
+    position: absolute;
+}
+
+.form-control {
+    color: #1A237E;
+    width: 40%;
+    height: 7vh;
+    margin: 0 auto;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    box-shadow: 0px 3px 5px 1px #ccc; 
+}
+
+.form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: 0px 3px 5px 1px #ccc;
+  }
+
+.form1{
+    border-radius: 3px 3px 0px 0px;
+    text-align: center;
+}
+
+.form2{
+    border-radius: 0px 0px 0px 0px;
+    text-align: center;
+    color:#7e24fa;
+}
+
+.btn{
+    width: 40%;
+    height: 7vh;
+    color: white;    
+    box-shadow: 0px 3px 5px 1px #ccc;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0px 0px 3px 3px;
+    background-color: #1A237E;
+}
+
+
+.form-control::-webkit-input-placeholder { 
+    color: #424242;
+    font-weight: bold; 
+    text-align: center; 
+}  
+
+.messages{
+    padding: 20px;
+    color: #ff0051;
+    font-weight: bold;
+}
+
+.column2{
+    background-color: #1A237E;
+    min-height: 100vh;
+} 
+
+.col2{
+    text-align: center;
+    margin-top: 25%;
+}
+
+#textInCol2{
+    color: #fff;
+    padding: 20px;
+}
+
