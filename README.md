@@ -1,1 +1,1 @@
-JavaScript/jQuery/HTML5/CSS3
+JavaScript - jQuery - HTML5/CSS3
